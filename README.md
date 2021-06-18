@@ -1,9 +1,8 @@
 # Video_calling_app
-Current progress-
-
+**Current progress-**
 Local user's audio and video streaming.
 
-Instructions for running-
+**Instructions for running-**
 
 1.Download the code
 
