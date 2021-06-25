@@ -7,9 +7,6 @@ let path = require( 'path' );
 const { v4: uuidv4 } = require('uuid');
 app.set('view engine', 'ejs')
 app.use(express.static( 'public'));
-app.use('/peerjs', require('peer').ExpressPeerServer(server, {
-	debug: true
-}))
 
 app.get('/', (req, res) => {
 res.redirect(`/${uuidv4()}`);
