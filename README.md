@@ -8,6 +8,6 @@ Local user's audio and video streaming.
 
 2.cd Video_App
 
-3.node app.js
+3.node server.js
 
 4.Open http://localhost:3000/
