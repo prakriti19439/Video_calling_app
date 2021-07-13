@@ -1,6 +1,6 @@
 # Video_calling_app
 
-![agile](https://user-images.githubusercontent.com/74024918/125527037-c3271583-d801-4cb2-a42e-01254397464a.png)- https://prakriti-video-app.herokuapp.com/
+**Link to project -** https://prakriti-video-app.herokuapp.com/
 
 I made this project as part of Microsoft Engage Program 2021 in which we had to clone Microsoft Teams.
 
@@ -14,7 +14,7 @@ I made this project as part of Microsoft Engage Program 2021 in which we had to 
 6. Chat - history available.
 7. User can start the conversation before a meeting and can continue the conversation after the meeting
 
-![agile](https://user-images.githubusercontent.com/74024918/125527037-c3271583-d801-4cb2-a42e-01254397464a.png) https://youtu.be/UqeTx3rGEv4
+Demo Video - https://www.youtube.com/watch?v=UqeTx3rGEv4
 
 **Agile Methodology -** 
 
