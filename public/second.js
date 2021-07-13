@@ -13,12 +13,16 @@ const share_screen = document.querySelector('#shareScreen');
     { url: 'stun:stun.l.google.com:19302' }
   ]}
 });
+//video element for local video
 const myVideo = document.createElement('video')
+//to remove echo and noise
 myVideo.muted = "muted";
 let stream;
 let displayMediaStream;
 
+//to track the users
  const peers = {}
+ //getting video stream 
  navigator.mediaDevices.getUserMedia({
    video: true,
    audio: true
@@ -54,7 +58,7 @@ muteButton.onclick = function(){
 
 }
 */
-
+//adding peer's video
    myPeer.on('call', call => {
     stream=stream
      call.answer(stream)
@@ -82,7 +86,7 @@ muteButton.onclick = function(){
   messageAppend({content:data.content,userName:data.userName},'left');     //receiver
 })
 
-
+//when user clicks on send msg
 form.addEventListener('submit',(e) => {
   e.preventDefault();
   const name = window.sessionStorage.getItem('name');
@@ -94,6 +98,7 @@ form.addEventListener('submit',(e) => {
   messageInput.value='';
 })
 
+//function to make the message present a certain way
 function messageAppend(message,position) {
   const messagediv = document.createElement('div');
   const spam = document.createElement('h5');
@@ -106,27 +111,27 @@ function messageAppend(message,position) {
   chatdiv.append(messagediv);
 }
 
-socket.on('output',(data) => { //recieves the entire chat history upon logging in between two users and displays them
+socket.on('output',(data) => { //recieves the entire chat history upon entering a room
     for(var i=0; i<data.length;i++) {
         messageAppend(data[i],'left');
     }
     chatdiv.scrollTop=chatdiv.scrollHeight;
 });
 
-
+//connecting to new user
  function connectToNewUser(userId, stream) {
    const call = myPeer.call(userId, stream)
    const video = document.createElement('video')
    call.on('stream', userVideoStream => {
      addVideoStream(video, userVideoStream)
    })
-   call.on('close', () => {
+   call.on('close', () => { //removing video if user disconnects
      video.remove()
    })
 
    peers[userId] = call
  }
-
+//appending the video to grid
  function addVideoStream(video, stream) {
    video.srcObject = stream
    video.addEventListener('loadedmetadata', () => {
