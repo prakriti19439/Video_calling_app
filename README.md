@@ -21,4 +21,9 @@ Agile Methodology -
 Agile Methodology refers to the practice which promotes continuous iteration of development and testing throughout the software development lifecycle of the project.
 My project was divided into sprints for a period of one month.
 
+![agile](https://user-images.githubusercontent.com/74024918/125527037-c3271583-d801-4cb2-a42e-01254397464a.png)
+
+
+
+
 
