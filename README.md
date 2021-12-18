@@ -14,8 +14,6 @@ I made this project as part of Microsoft Engage Program 2021 in which we had to 
 6. Chat - history available.
 7. User can start the conversation before a meeting and can continue the conversation after the meeting
 
-Demo Video - https://www.youtube.com/watch?v=UqeTx3rGEv4
-
 **Agile Methodology -** 
 
 Agile Methodology refers to the practice which promotes continuous iteration of development and testing throughout the software development lifecycle of the project.
